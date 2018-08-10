@@ -23,7 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#define APP_GROUP_ID                  @"group.com.goldcoin.goldcoinwallet"
+#define APP_GROUP_ID                  @"group.org.goldcoin.goldcoinwallet1"
 #define APP_GROUP_REQUEST_DATA_KEY    @"kBRSharedContainerDataWalletRequestDataKey"
 #define APP_GROUP_RECEIVE_ADDRESS_KEY @"kBRSharedContainerDataWalletReceiveAddressKey"
 #define APP_GROUP_QR_IMAGE_KEY        @"kBRSharedContainerDataWalletQRImageKey"
