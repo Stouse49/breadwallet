@@ -2041,7 +2041,7 @@ int compare_int64(const void *a,const void *b) {
         if (nHeight > novemberFork2) {
             if (medTime >= 120) {
                 //Check to see whether we are in a deadlock situation with the 51% defense system
-                printf("  Checking for DeadLocks \n");
+                //printf("  Checking for DeadLocks \n");
                 int numTooClose = 0;
                 int index = 1;
                 while (index != 55) {
@@ -2054,7 +2054,7 @@ int compare_int64(const void *a,const void *b) {
                 if (numTooClose > 0) {
                     //We found 6 blocks that were solved in exactly 10 minutes
                     //Averaging 1.66 minutes per block
-                    printf(" \n DeadLock detected and fixed - Difficulty Increased to avoid bleeding edge of defence system \n");
+                    //printf(" \n DeadLock detected and fixed - Difficulty Increased to avoid bleeding edge of defence system \n");
                     
                     if (nHeight > julyFork2) {
                         medTime = 119;
@@ -2062,7 +2062,7 @@ int compare_int64(const void *a,const void *b) {
                         medTime = 110;
                     }
                 } else {
-                    printf(" \n DeadLock not detected. \n");
+                    //printf(" \n DeadLock not detected. \n");
                 }
                 
                 
@@ -2210,10 +2210,10 @@ int compare_int64(const void *a,const void *b) {
             bnNew = setCompact(nProofOfWorkLimit);
         
         /// debug print
-        printf("GetNextWorkRequired RETARGET\n");
-        printf("nTargetTimespan = %d    nActualTimespan = %d\n", (int)nTargetTimespanCurrent, (int)nActualTimespan);
-        printf("Before: %08x  \n", pindexLast.target);
-        printf("After:  %08x  \n", getCompact(bnNew));
+        //printf("GetNextWorkRequired RETARGET\n");
+        //printf("nTargetTimespan = %d    nActualTimespan = %d\n", (int)nTargetTimespanCurrent, (int)nActualTimespan);
+        //printf("Before: %08x  \n", pindexLast.target);
+        //printf("After:  %08x  \n", getCompact(bnNew));
     } else {
         int hardForkedJuly = true;
         int64_t nTargetTimespanCurrent = fNewDifficultyProtocol ? nTargetTimespan : (nTargetTimespan * 4);
